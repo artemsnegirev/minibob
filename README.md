@@ -158,7 +158,7 @@ usr: обратная ... монеты
 bob: сторона
 ```
 
-Result `exact_match` is 0.19, that is small, but little better than the model before finetuning. After all, our main goal is to teach play Alias where prompts are much easier. So I handcrafted test cases as I played Alias:
+Result `exact_match` is 0.19, that is small, but little better than the model before finetuning. After all, our main goal is to teach play Alias where prompts are much easier. So I handcrafted test cases as I played Alias, there are some of them:
 
 ```json
 {"answer": "время", "prompt": "измеряется в часах, минутах и секундах"},
@@ -166,8 +166,7 @@ Result `exact_match` is 0.19, that is small, but little better than the model be
 {"answer": "день", "prompt": "время суток идущее после утра"},
 {"answer": "рука", "prompt": "верхняя конечность человека"},
 {"answer": "работа", "prompt": "место, куда человек устраивается после учебы"},
-{"answer": "слово", "prompt": "составляющая предложений"},
-// ... other examples
+{"answer": "слово", "prompt": "составляющая предложений"}
 ```
 
 I asked Minibob to generate 5 candidates without [sampling](). If the candidates list contains an answer, I count as a correct prediction otherwise not correct.
