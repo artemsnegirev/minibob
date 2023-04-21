@@ -1,0 +1,6 @@
+__pycache__
+chromedriver
+.cache
+data
+venv
+.env
