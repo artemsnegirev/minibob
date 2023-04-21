@@ -127,9 +127,9 @@ To train model we need `transformers` library, it's fast to prototype and easy t
 Training pipeline is here:
 minibob/train_minibob.ipynb
 
-It's better to open notebook in Google Colab, which gives you free to use GPU. Training on a local computer with CPU will continue too much long.
+It's better to open notebook in Google Colab, which gives you free to use GPU. Training on a local computer with CPU will continue too much long. Switch `Runtime mode` to GPU (Hardware accelerator -> GPU) and execute cells one by one.
 
-Switch `Runtime mode` to GPU (Hardware accelerator -> GPU) and execute cells one by one.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/artemsnegirev/minibob/blob/main/minibob/train_minibob.ipynb)
 
 In the end you can [push your model](https://huggingface.co/docs/transformers/v4.27.2/en/model_sharing) on Huggingface Hub!
 
@@ -169,7 +169,7 @@ Result `exact_match` is 0.19, that is small, but little better than the model be
 {"answer": "слово", "prompt": "составляющая предложений"}
 ```
 
-I asked Minibob to generate 5 candidates without [sampling](). If the candidates list contains an answer, I count as a correct prediction otherwise not correct.
+I asked Minibob to generate 5 candidates without [sampling](https://huggingface.co/blog/how-to-generate). If the candidates list contains an answer, I count as a correct prediction otherwise not correct.
 
 Test cases `exact_match` score is 0.65. Much better!
 
