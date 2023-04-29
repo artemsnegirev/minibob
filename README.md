@@ -111,7 +111,7 @@ Key stats:
 
 ## Teaching minibob solve puzzles
 
-You can skip this section, ready to use [model](https://huggingface.co/datasets/artemsnegirev/minibob) you can find on 🤗 hub:
+You can skip this section, ready to use [model](https://huggingface.co/artemsnegirev/minibob) you can find on 🤗 hub:
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
